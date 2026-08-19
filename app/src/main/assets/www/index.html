@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BarberManager</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>💈 BarberManager</h1>
+    <p>سیستم مدیریت آرایشگاه</p>
+</header>
+
+<main>
+
+    <!-- داشبورد -->
+    <section class="card dashboard-card">
+        <h2>📊 داشبورد</h2>
+
+        <div class="stats">
+
+            <div class="stat">
+                <span>👥</span>
+                <strong id="customerCount">0</strong>
+                <p>مشتریان</p>
+            </div>
+
+            <div class="stat">
+                <span>📅</span>
+                <strong id="appointmentCount">0</strong>
+                <p>نوبت‌ها</p>
+            </div>
+
+            <div class="stat">
+                <span>💰</span>
+                <strong id="dashboardIncome">0</strong>
+                <p>درآمد</p>
+            </div>
+
+            <div class="stat">
+                <span>✂️</span>
+                <strong id="serviceCount">0</strong>
+                <p>خدمات</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- جستجو -->
+    <section class="card">
+        <h2>🔎 جستجو</h2>
+        <p>جستجوی مشتری یا نوبت با نام یا شماره تماس</p>
+
+        <input
+            type="search"
+            id="searchInput"
+            placeholder="نام یا شماره تماس را وارد کنید"
+            oninput="searchAll()"
+        >
+
+        <div id="searchResults">
+            <p>برای جستجو نام یا شماره تماس را وارد کنید.</p>
+        </div>
+    </section>
+
+    <!-- ثبت نوبت -->
+    <section class="card">
+        <h2>📅 ثبت نوبت</h2>
+        <p>ثبت نوبت جدید برای مشتری</p>
+
+        <input
+            type="text"
+            id="customerName"
+            placeholder="نام مشتری"
+        >
+
+        <input
+            type="tel"
+            id="customerPhone"
+            placeholder="شماره تماس"
+        >
+
+        <select id="service">
+            <option value="">انتخاب خدمت</option>
+        </select>
+
+        <input
+            type="date"
+            id="appointmentDate"
+        >
+
+        <input
+            type="time"
+            id="appointmentTime"
+        >
+
+        <button onclick="addAppointment()">
+            ثبت نوبت
+        </button>
+    </section>
+
+    <!-- نوبت‌ها -->
+    <section class="card">
+        <h2>📋 نوبت‌های ثبت‌شده</h2>
+
+        <div id="appointmentsList">
+            <p>هنوز نوبتی ثبت نشده است.</p>
+        </div>
+    </section>
+
+    <!-- مشتریان -->
+    <section class="card">
+        <h2>👤 مشتریان</h2>
+        <p>ثبت مشتری جدید</p>
+
+        <input
+            type="text"
+            id="newCustomerName"
+            placeholder="نام مشتری"
+        >
+
+        <input
+            type="tel"
+            id="newCustomerPhone"
+            placeholder="شماره تماس"
+        >
+
+        <button onclick="addCustomer()">
+            ➕ ثبت مشتری
+        </button>
+
+        <div id="customersList">
+            <p>هنوز مشتری ثبت نشده است.</p>
+        </div>
+    </section>
+
+    <!-- خدمات -->
+    <section class="card">
+        <h2>✂️ مدیریت خدمات و قیمت‌ها</h2>
+
+        <div id="servicesList">
+            <p>در حال بارگذاری خدمات...</p>
+        </div>
+
+        <button onclick="addService()">
+            ➕ افزودن خدمت جدید
+        </button>
+    </section>
+
+    <!-- درآمد -->
+    <section class="card">
+        <h2>💰 درآمد</h2>
+
+        <p>مجموع درآمد ثبت‌شده:</p>
+
+        <h2 id="totalIncome">0</h2>
+
+        <button onclick="showIncomeMessage()">
+            🔄 بروزرسانی درآمد
+        </button>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 BarberManager</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

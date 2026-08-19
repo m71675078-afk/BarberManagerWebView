@@ -1,0 +1,7 @@
+com.barbermanager.webview.app-pngs-0 /data/data/com.termux/files/home/BarberManagerWebView/app/build/generated/res/pngs/debug
+com.barbermanager.webview.app-resValues-1 /data/data/com.termux/files/home/BarberManagerWebView/app/build/generated/res/resValues/debug
+com.barbermanager.webview.app-packageDebugResources-2 /data/data/com.termux/files/home/BarberManagerWebView/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.barbermanager.webview.app-packageDebugResources-3 /data/data/com.termux/files/home/BarberManagerWebView/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.barbermanager.webview.app-debug-4 /data/data/com.termux/files/home/BarberManagerWebView/app/build/intermediates/merged_res/debug/mergeDebugResources
+com.barbermanager.webview.app-debug-5 /data/data/com.termux/files/home/BarberManagerWebView/app/src/debug/res
+com.barbermanager.webview.app-main-6 /data/data/com.termux/files/home/BarberManagerWebView/app/src/main/res

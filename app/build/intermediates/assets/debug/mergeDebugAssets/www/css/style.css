@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    min-height: 100vh;
+}
+
+header {
+    background: #111827;
+    color: white;
+    padding: 28px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #cbd5e1;
+}
+
+main {
+    width: 92%;
+    max-width: 1000px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 24px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+}
+
+.card h2 {
+    margin-bottom: 12px;
+    font-size: 21px;
+}
+
+.card > p {
+    color: #64748b;
+    margin-bottom: 18px;
+    line-height: 1.8;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 13px 14px;
+    margin-bottom: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    background: white;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus,
+select:focus {
+    border-color: #111827;
+}
+
+button {
+    width: 100%;
+    border: none;
+    background: #111827;
+    color: white;
+    padding: 13px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+button:hover {
+    background: #374151;
+}
+
+#appointmentsList {
+    margin-top: 15px;
+}
+
+#appointmentsList > div {
+    background: #f8fafc;
+    padding: 16px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #e2e8f0;
+}
+
+#appointmentsList p {
+    margin-bottom: 7px;
+    line-height: 1.6;
+}
+
+#appointmentsList button {
+    background: #991b1b;
+    margin-top: 10px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #e2e8f0;
+    margin-top: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #64748b;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    main {
+        width: 94%;
+        margin-top: 20px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+}

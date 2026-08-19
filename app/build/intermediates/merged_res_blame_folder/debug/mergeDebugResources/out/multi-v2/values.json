@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.barbermanager.webview.app-mergeDebugResources-2:/values/values.xml",
+            "map": [
+                {
+                    "source": "/data/data/com.termux/files/home/BarberManagerWebView/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "56",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "148"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "3",
+                        "endColumns": "12",
+                        "endOffsets": "147"
+                    }
+                }
+            ]
+        }
+    ]
+}

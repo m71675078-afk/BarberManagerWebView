@@ -1,0 +1,16 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.barbermanager.webview'
+    compileSdk 36
+
+    defaultConfig {
+        applicationId 'com.barbermanager.webview'
+        minSdk 24
+        targetSdk 36
+        versionCode 1
+        versionName '1.0'
+    }
+}
